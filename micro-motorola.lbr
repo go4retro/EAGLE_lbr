@@ -46,6 +46,10 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -68,8 +72,31 @@
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="216" name="SMD16" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;Motorola Microcontrollers and Memories&lt;/b&gt;&lt;p&gt;
@@ -4553,6 +4580,131 @@ shrink quad flat pack, square</description>
 <text x="-26.035" y="-6.35" size="1.778" layer="25" rot="R90">&gt;NAME</text>
 <text x="-4.445" y="-0.635" size="1.778" layer="27">&gt;VALUE</text>
 </package>
+<package name="DIP-24">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="-15.24" y1="6.731" x2="-15.24" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-15.24" y1="-6.731" x2="-15.24" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-15.24" y1="1.016" x2="-15.24" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-15.24" y1="-6.731" x2="15.24" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="15.24" y1="6.731" x2="15.24" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="15.24" y1="6.731" x2="-15.24" y2="6.731" width="0.1524" layer="21"/>
+<pad name="1" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-15.494" y="-6.731" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-11.303" y="-0.889" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="DIP-40">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="25.4" y1="6.731" x2="-25.4" y2="6.731" width="0.1524" layer="21"/>
+<wire x1="-25.4" y1="-6.731" x2="25.4" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="25.4" y1="6.731" x2="25.4" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="-25.4" y1="6.731" x2="-25.4" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-25.4" y1="-6.731" x2="-25.4" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-25.4" y1="0.889" x2="-25.4" y2="-1.143" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-24.13" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-21.59" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-19.05" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="19.05" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="21.59" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="24.13" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="24.13" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="21.59" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="19.05" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="25" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="26" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="27" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="28" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="29" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="30" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="31" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="32" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="33" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="34" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="35" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="36" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="37" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="38" x="-19.05" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="39" x="-21.59" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="40" x="-24.13" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-25.908" y="-6.604" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="-17.145" y="-1.016" size="1.778" layer="27">&gt;VALUE</text>
+</package>
+<package name="DIP-28">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="17.78" y1="6.731" x2="-17.78" y2="6.731" width="0.1524" layer="21"/>
+<wire x1="-17.78" y1="-6.731" x2="17.78" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="6.731" x2="17.78" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="-17.78" y1="6.731" x2="-17.78" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-17.78" y1="-6.731" x2="-17.78" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-17.78" y1="1.016" x2="-17.78" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="25" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="26" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="27" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="28" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-18.161" y="-6.604" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="-9.779" y="-0.889" size="1.778" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="6800">
@@ -8663,6 +8815,357 @@ shrink quad flat pack, square</description>
 <pin name="VDD" x="-20.32" y="35.56" length="middle" direction="pwr"/>
 <pin name="VSS" x="-20.32" y="-33.02" length="middle" direction="pwr"/>
 <pin name="!IRQ" x="-20.32" y="30.48" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC6810">
+<wire x1="-7.62" y1="-22.86" x2="7.62" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-22.86" x2="7.62" y2="20.32" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="-7.62" y2="20.32" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="20.32" x2="-7.62" y2="-22.86" width="0.4064" layer="94"/>
+<text x="-7.62" y="20.955" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="D0" x="12.7" y="17.78" length="middle" rot="R180"/>
+<pin name="D1" x="12.7" y="15.24" length="middle" rot="R180"/>
+<pin name="D2" x="12.7" y="12.7" length="middle" rot="R180"/>
+<pin name="D3" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="D4" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="D5" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="D6" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="D7" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="CS0" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="CS1" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="CS2" x="-12.7" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="CS3" x="-12.7" y="-15.24" length="middle" direction="in"/>
+<pin name="CS4" x="-12.7" y="-17.78" length="middle" direction="in" function="dot"/>
+<pin name="CS5" x="-12.7" y="-20.32" length="middle" direction="in" function="dot"/>
+<pin name="R/!W" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="A6" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A5" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A4" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="A0" x="-12.7" y="17.78" length="middle" direction="in"/>
+</symbol>
+<symbol name="PWRN">
+<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
+<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
+<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="MC6821">
+<wire x1="-10.16" y1="-30.48" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="10.16" y2="30.48" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="30.48" x2="-10.16" y2="30.48" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="30.48" x2="-10.16" y2="-30.48" width="0.4064" layer="94"/>
+<text x="-10.16" y="31.115" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="PA0" x="15.24" y="27.94" length="middle" rot="R180"/>
+<pin name="PA1" x="15.24" y="25.4" length="middle" rot="R180"/>
+<pin name="PA2" x="15.24" y="22.86" length="middle" rot="R180"/>
+<pin name="PA3" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="PA4" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="PA5" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="PA6" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="PA7" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="PB0" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="PB1" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="PB2" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="PB3" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="PB4" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="PB5" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="PB6" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="PB7" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="CB1" x="15.24" y="-20.32" length="middle" direction="in" rot="R180"/>
+<pin name="CB2" x="15.24" y="-27.94" length="middle" rot="R180"/>
+<pin name="R/!W" x="-15.24" y="-12.7" length="middle" direction="in"/>
+<pin name="CS0" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="CS2" x="-15.24" y="0" length="middle" direction="in" function="dot"/>
+<pin name="CS1" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="E" x="-15.24" y="-15.24" length="middle" direction="in"/>
+<pin name="D7" x="-15.24" y="10.16" length="middle"/>
+<pin name="D6" x="-15.24" y="12.7" length="middle"/>
+<pin name="D5" x="-15.24" y="15.24" length="middle"/>
+<pin name="D4" x="-15.24" y="17.78" length="middle"/>
+<pin name="D3" x="-15.24" y="20.32" length="middle"/>
+<pin name="D2" x="-15.24" y="22.86" length="middle"/>
+<pin name="D1" x="-15.24" y="25.4" length="middle"/>
+<pin name="D0" x="-15.24" y="27.94" length="middle"/>
+<pin name="RESET" x="-15.24" y="-17.78" length="middle" direction="in" function="dot"/>
+<pin name="RS1" x="-15.24" y="-7.62" length="middle" direction="in"/>
+<pin name="RS0" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="IRQB" x="-15.24" y="-25.4" length="middle" direction="oc" function="dot"/>
+<pin name="IRQA" x="-15.24" y="-22.86" length="middle" direction="oc" function="dot"/>
+<pin name="CA2" x="15.24" y="-25.4" length="middle" rot="R180"/>
+<pin name="CA1" x="15.24" y="-17.78" length="middle" direction="in" rot="R180"/>
+</symbol>
+<symbol name="MC6840">
+<wire x1="-7.62" y1="-25.4" x2="7.62" y2="-25.4" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-25.4" x2="7.62" y2="25.4" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="25.4" x2="-7.62" y2="25.4" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="25.4" x2="-7.62" y2="-25.4" width="0.4064" layer="94"/>
+<text x="-7.62" y="26.035" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="G2" x="-12.7" y="12.7" length="middle" direction="in" function="dot"/>
+<pin name="O2" x="12.7" y="20.32" length="middle" direction="out" rot="R180"/>
+<pin name="C2" x="-12.7" y="15.24" length="middle" direction="in" function="dot"/>
+<pin name="G3" x="-12.7" y="5.08" length="middle" direction="in" function="dot"/>
+<pin name="O3" x="12.7" y="17.78" length="middle" direction="out" rot="R180"/>
+<pin name="C3" x="-12.7" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="RESET" x="-12.7" y="-22.86" length="middle" direction="in" function="dot"/>
+<pin name="IRQ" x="12.7" y="12.7" length="middle" direction="oc" function="dot" rot="R180"/>
+<pin name="RS0" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="RS1" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="RS2" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="R/!W" x="-12.7" y="-20.32" length="middle" direction="in"/>
+<pin name="CS0" x="-12.7" y="0" length="middle" direction="in" function="dot"/>
+<pin name="CS1" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="E" x="-12.7" y="-17.78" length="middle" direction="in"/>
+<pin name="D7" x="12.7" y="-10.16" length="middle" rot="R180"/>
+<pin name="D6" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="D5" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="D4" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="D3" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="D2" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="D1" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="D0" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="G1" x="-12.7" y="20.32" length="middle" direction="in" function="dot"/>
+<pin name="O1" x="12.7" y="22.86" length="middle" direction="out" rot="R180"/>
+<pin name="C1" x="-12.7" y="22.86" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="MC6844">
+<wire x1="-10.16" y1="-43.18" x2="10.16" y2="-43.18" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-43.18" x2="10.16" y2="40.64" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="40.64" x2="-10.16" y2="40.64" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="40.64" x2="-10.16" y2="-43.18" width="0.4064" layer="94"/>
+<text x="-10.16" y="41.275" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-45.72" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="!CS!/TX" x="-15.24" y="38.1" length="middle" direction="in"/>
+<pin name="R/!W" x="15.24" y="-40.64" length="middle" rot="R180"/>
+<pin name="A0" x="15.24" y="38.1" length="middle" rot="R180"/>
+<pin name="A1" x="15.24" y="35.56" length="middle" rot="R180"/>
+<pin name="A2" x="15.24" y="33.02" length="middle" rot="R180"/>
+<pin name="A3" x="15.24" y="30.48" length="middle" rot="R180"/>
+<pin name="A4" x="15.24" y="27.94" length="middle" rot="R180"/>
+<pin name="A5" x="15.24" y="25.4" length="middle" direction="out" rot="R180"/>
+<pin name="A6" x="15.24" y="22.86" length="middle" direction="out" rot="R180"/>
+<pin name="A7" x="15.24" y="20.32" length="middle" direction="out" rot="R180"/>
+<pin name="A8" x="15.24" y="17.78" length="middle" direction="out" rot="R180"/>
+<pin name="A9" x="15.24" y="15.24" length="middle" direction="out" rot="R180"/>
+<pin name="A10" x="15.24" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="A11" x="15.24" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="A12" x="15.24" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="A13" x="15.24" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="A14" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="A15" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="D7" x="15.24" y="-22.86" length="middle" rot="R180"/>
+<pin name="D6" x="15.24" y="-20.32" length="middle" rot="R180"/>
+<pin name="D5" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="D4" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="D3" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="D2" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="D1" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="D0" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="TXRQ3" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="TXRQ2" x="-15.24" y="15.24" length="middle" direction="in"/>
+<pin name="TXRQ1" x="-15.24" y="17.78" length="middle" direction="in"/>
+<pin name="TXRQ0" x="-15.24" y="20.32" length="middle" direction="in"/>
+<pin name="IRQ/DEND" x="15.24" y="-38.1" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="TXSTB" x="15.24" y="-30.48" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="TXAKA" x="15.24" y="-27.94" length="middle" direction="out" rot="R180"/>
+<pin name="DRQ2" x="15.24" y="-35.56" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="DRQ1" x="15.24" y="-33.02" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="DGRNT" x="-15.24" y="35.56" length="middle" direction="in"/>
+<pin name="RESET" x="-15.24" y="25.4" length="middle" direction="in" function="dot"/>
+<pin name="E" x="-15.24" y="30.48" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC6845">
+<wire x1="-10.16" y1="-38.1" x2="10.16" y2="-38.1" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-38.1" x2="10.16" y2="35.56" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="35.56" x2="-10.16" y2="35.56" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="35.56" x2="-10.16" y2="-38.1" width="0.4064" layer="94"/>
+<text x="-10.16" y="36.195" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-40.64" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="RESET" x="-15.24" y="-25.4" length="middle" direction="in" function="dot"/>
+<pin name="LPSTD" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="MA0" x="15.24" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="MA1" x="15.24" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="MA2" x="15.24" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="MA3" x="15.24" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="MA4" x="15.24" y="-12.7" length="middle" direction="out" rot="R180"/>
+<pin name="MA5" x="15.24" y="-15.24" length="middle" direction="out" rot="R180"/>
+<pin name="MA6" x="15.24" y="-17.78" length="middle" direction="out" rot="R180"/>
+<pin name="MA7" x="15.24" y="-20.32" length="middle" direction="out" rot="R180"/>
+<pin name="MA8" x="15.24" y="-22.86" length="middle" direction="out" rot="R180"/>
+<pin name="MA9" x="15.24" y="-25.4" length="middle" direction="out" rot="R180"/>
+<pin name="MA10" x="15.24" y="-27.94" length="middle" direction="out" rot="R180"/>
+<pin name="MA11" x="15.24" y="-30.48" length="middle" direction="out" rot="R180"/>
+<pin name="MA12" x="15.24" y="-33.02" length="middle" direction="out" rot="R180"/>
+<pin name="MA13" x="15.24" y="-35.56" length="middle" direction="out" rot="R180"/>
+<pin name="DE" x="15.24" y="33.02" length="middle" direction="out" rot="R180"/>
+<pin name="CURSOR" x="15.24" y="27.94" length="middle" direction="out" rot="R180"/>
+<pin name="CLK" x="-15.24" y="0" length="middle" direction="in" function="clk"/>
+<pin name="R/!W" x="-15.24" y="-20.32" length="middle" direction="in"/>
+<pin name="E" x="-15.24" y="-15.24" length="middle" direction="in"/>
+<pin name="RS" x="-15.24" y="-10.16" length="middle" direction="in"/>
+<pin name="CS" x="-15.24" y="-5.08" length="middle" direction="in" function="dot"/>
+<pin name="D7" x="-15.24" y="15.24" length="middle" direction="out"/>
+<pin name="D6" x="-15.24" y="17.78" length="middle" direction="out"/>
+<pin name="D5" x="-15.24" y="20.32" length="middle" direction="out"/>
+<pin name="D4" x="-15.24" y="22.86" length="middle" direction="out"/>
+<pin name="D3" x="-15.24" y="25.4" length="middle" direction="out"/>
+<pin name="D2" x="-15.24" y="27.94" length="middle" direction="out"/>
+<pin name="D1" x="-15.24" y="30.48" length="middle" direction="out"/>
+<pin name="D0" x="-15.24" y="33.02" length="middle" direction="out"/>
+<pin name="RA4" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="RA3" x="15.24" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="RA2" x="15.24" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="RA1" x="15.24" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="RA0" x="15.24" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="HS" x="15.24" y="20.32" length="middle" direction="out" rot="R180"/>
+<pin name="VS" x="15.24" y="17.78" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC6847">
+<wire x1="-10.16" y1="30.48" x2="10.16" y2="30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="30.48" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-30.48" x2="-10.16" y2="30.48" width="0.254" layer="94"/>
+<text x="-5.08" y="31.242" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="DA0" x="15.24" y="27.94" length="middle" rot="R180"/>
+<pin name="DA1" x="15.24" y="25.4" length="middle" rot="R180"/>
+<pin name="DA2" x="15.24" y="22.86" length="middle" rot="R180"/>
+<pin name="DA3" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="DA4" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="DA5" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="DA6" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="DA7" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="DA8" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="DA9" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="DA10" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="DA11" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="DA12" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="D0" x="-15.24" y="27.94" length="middle"/>
+<pin name="D1" x="-15.24" y="25.4" length="middle"/>
+<pin name="D2" x="-15.24" y="22.86" length="middle"/>
+<pin name="D3" x="-15.24" y="20.32" length="middle"/>
+<pin name="D4" x="-15.24" y="17.78" length="middle"/>
+<pin name="D5" x="-15.24" y="15.24" length="middle"/>
+<pin name="D6" x="-15.24" y="12.7" length="middle"/>
+<pin name="D7" x="-15.24" y="10.16" length="middle"/>
+<pin name="CHB" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="OA" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="OB" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="!MS" x="-15.24" y="5.08" length="middle"/>
+<pin name="GM0" x="-15.24" y="0" length="middle"/>
+<pin name="Y" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="GM1" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GM2" x="-15.24" y="-5.08" length="middle"/>
+<pin name="INV" x="-15.24" y="-10.16" length="middle"/>
+<pin name="INT/EXT" x="-15.24" y="-12.7" length="middle"/>
+<pin name="CLK" x="-15.24" y="2.54" length="middle"/>
+<pin name="A/G" x="-15.24" y="-15.24" length="middle"/>
+<pin name="A/S" x="-15.24" y="-17.78" length="middle"/>
+<pin name="!RP" x="15.24" y="-22.86" length="middle" rot="R180"/>
+<pin name="!FS" x="15.24" y="-25.4" length="middle" rot="R180"/>
+<pin name="!HS" x="15.24" y="-27.94" length="middle" rot="R180"/>
+<pin name="CSS" x="-15.24" y="-20.32" length="middle"/>
+<pin name="VCC" x="-15.24" y="-25.4" length="middle"/>
+<pin name="GND" x="-15.24" y="-27.94" length="middle"/>
+</symbol>
+<symbol name="MC6850">
+<wire x1="-11.43" y1="-25.4" x2="11.43" y2="-25.4" width="0.4064" layer="94"/>
+<wire x1="11.43" y1="-25.4" x2="11.43" y2="25.4" width="0.4064" layer="94"/>
+<wire x1="11.43" y1="25.4" x2="-11.43" y2="25.4" width="0.4064" layer="94"/>
+<wire x1="-11.43" y1="25.4" x2="-11.43" y2="-25.4" width="0.4064" layer="94"/>
+<text x="-11.43" y="26.035" size="1.778" layer="95">&gt;NAME</text>
+<text x="-11.43" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="RXDATA" x="-16.51" y="5.08" length="middle" direction="in"/>
+<pin name="RXCLK" x="-16.51" y="20.32" length="middle" direction="in" function="clk"/>
+<pin name="TXCLK" x="-16.51" y="15.24" length="middle" direction="in" function="clk"/>
+<pin name="RTS" x="-16.51" y="-7.62" length="middle" direction="out" function="dot"/>
+<pin name="TXDATA" x="-16.51" y="0" length="middle" direction="out"/>
+<pin name="IRQ" x="16.51" y="-22.86" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="CS0" x="16.51" y="15.24" length="middle" direction="in" rot="R180"/>
+<pin name="CS2" x="16.51" y="10.16" length="middle" direction="in" function="dot" rot="R180"/>
+<pin name="CS1" x="16.51" y="12.7" length="middle" direction="in" rot="R180"/>
+<pin name="RS" x="16.51" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="R/!W" x="16.51" y="22.86" length="middle" direction="in" rot="R180"/>
+<pin name="E" x="16.51" y="20.32" length="middle" direction="in" rot="R180"/>
+<pin name="D7" x="16.51" y="-17.78" length="middle" rot="R180"/>
+<pin name="D6" x="16.51" y="-15.24" length="middle" rot="R180"/>
+<pin name="D5" x="16.51" y="-12.7" length="middle" rot="R180"/>
+<pin name="D4" x="16.51" y="-10.16" length="middle" rot="R180"/>
+<pin name="D3" x="16.51" y="-7.62" length="middle" rot="R180"/>
+<pin name="D2" x="16.51" y="-5.08" length="middle" rot="R180"/>
+<pin name="D1" x="16.51" y="-2.54" length="middle" rot="R180"/>
+<pin name="D0" x="16.51" y="0" length="middle" rot="R180"/>
+<pin name="DCD" x="-16.51" y="-20.32" length="middle" direction="in" function="dot"/>
+<pin name="CTS" x="-16.51" y="-12.7" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="MC6852">
+<wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="12.7" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-20.32" width="0.4064" layer="94"/>
+<text x="-12.7" y="18.415" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="RXDATA" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="RXCLK" x="-17.78" y="15.24" length="middle" direction="in" function="clk"/>
+<pin name="TXCLK" x="-17.78" y="12.7" length="middle" direction="in" function="clk"/>
+<pin name="SM/!DTR" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="TXDATA" x="17.78" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="IRQ" x="17.78" y="15.24" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="TUF" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="RESET" x="-17.78" y="-15.24" length="middle" direction="in" function="dot"/>
+<pin name="CS" x="-17.78" y="-7.62" length="middle" direction="in" function="dot"/>
+<pin name="RS" x="-17.78" y="-10.16" length="middle" direction="in"/>
+<pin name="R/!W" x="-17.78" y="-5.08" length="middle" direction="in"/>
+<pin name="E" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="D7" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="D6" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="D5" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="D4" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="D3" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="D2" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="D1" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="D0" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="DCD" x="-17.78" y="2.54" length="middle" direction="in" function="dot"/>
+<pin name="CTS" x="-17.78" y="5.08" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="MC6854">
+<wire x1="-12.7" y1="-25.4" x2="7.62" y2="-25.4" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-25.4" x2="7.62" y2="22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="22.86" x2="-12.7" y2="22.86" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-25.4" width="0.4064" layer="94"/>
+<text x="-12.7" y="23.495" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="RTS" x="12.7" y="17.78" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="RXD" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="RXC" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="TXC" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="TXD" x="12.7" y="20.32" length="middle" direction="out" rot="R180"/>
+<pin name="IRQ" x="12.7" y="0" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="RESET" x="-17.78" y="-17.78" length="middle" direction="in" function="dot"/>
+<pin name="CS" x="-17.78" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="RSO" x="-17.78" y="15.24" length="middle" direction="in"/>
+<pin name="RS1" x="-17.78" y="12.7" length="middle" direction="in"/>
+<pin name="R/!W" x="-17.78" y="-10.16" length="middle" direction="in"/>
+<pin name="E" x="-17.78" y="20.32" length="middle" direction="in"/>
+<pin name="D7" x="12.7" y="-22.86" length="middle" rot="R180"/>
+<pin name="D6" x="12.7" y="-20.32" length="middle" rot="R180"/>
+<pin name="D5" x="12.7" y="-17.78" length="middle" rot="R180"/>
+<pin name="D4" x="12.7" y="-15.24" length="middle" rot="R180"/>
+<pin name="D3" x="12.7" y="-12.7" length="middle" rot="R180"/>
+<pin name="D2" x="12.7" y="-10.16" length="middle" rot="R180"/>
+<pin name="D1" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="D0" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="RDSR" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="TDSR" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="FLAG_DET" x="12.7" y="10.16" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="LOC/DTR" x="12.7" y="12.7" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="DCD" x="-17.78" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="CTS" x="-17.78" y="-5.08" length="middle" direction="in" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -14599,6 +15102,832 @@ Source: www.motorola.com .. MC68HC908GP32.pdf</description>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="75C2312" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC6810" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;MICROCONTROLLER/MEMORY DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC6810" x="22.86" y="0"/>
+<gate name="P" symbol="PWRN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP-24">
+<connects>
+<connect gate="A" pin="A0" pad="23"/>
+<connect gate="A" pin="A1" pad="22"/>
+<connect gate="A" pin="A2" pad="21"/>
+<connect gate="A" pin="A3" pad="20"/>
+<connect gate="A" pin="A4" pad="19"/>
+<connect gate="A" pin="A5" pad="18"/>
+<connect gate="A" pin="A6" pad="17"/>
+<connect gate="A" pin="CS0" pad="10"/>
+<connect gate="A" pin="CS1" pad="11"/>
+<connect gate="A" pin="CS2" pad="12"/>
+<connect gate="A" pin="CS3" pad="13"/>
+<connect gate="A" pin="CS4" pad="14"/>
+<connect gate="A" pin="CS5" pad="15"/>
+<connect gate="A" pin="D0" pad="2"/>
+<connect gate="A" pin="D1" pad="3"/>
+<connect gate="A" pin="D2" pad="4"/>
+<connect gate="A" pin="D3" pad="5"/>
+<connect gate="A" pin="D4" pad="6"/>
+<connect gate="A" pin="D5" pad="7"/>
+<connect gate="A" pin="D6" pad="8"/>
+<connect gate="A" pin="D7" pad="9"/>
+<connect gate="A" pin="R/!W" pad="16"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VCC" pad="24"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC6821" prefix="IC">
+<description>&lt;b&gt;MICROCONTROLLER/MEMORY DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC6821" x="30.48" y="0"/>
+<gate name="P" symbol="PWRN" x="0" y="17.78" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIP-40">
+<connects>
+<connect gate="A" pin="CA1" pad="40"/>
+<connect gate="A" pin="CA2" pad="39"/>
+<connect gate="A" pin="CB1" pad="18"/>
+<connect gate="A" pin="CB2" pad="19"/>
+<connect gate="A" pin="CS0" pad="22"/>
+<connect gate="A" pin="CS1" pad="24"/>
+<connect gate="A" pin="CS2" pad="23"/>
+<connect gate="A" pin="D0" pad="33"/>
+<connect gate="A" pin="D1" pad="32"/>
+<connect gate="A" pin="D2" pad="31"/>
+<connect gate="A" pin="D3" pad="30"/>
+<connect gate="A" pin="D4" pad="29"/>
+<connect gate="A" pin="D5" pad="28"/>
+<connect gate="A" pin="D6" pad="27"/>
+<connect gate="A" pin="D7" pad="26"/>
+<connect gate="A" pin="E" pad="25"/>
+<connect gate="A" pin="IRQA" pad="38"/>
+<connect gate="A" pin="IRQB" pad="37"/>
+<connect gate="A" pin="PA0" pad="2"/>
+<connect gate="A" pin="PA1" pad="3"/>
+<connect gate="A" pin="PA2" pad="4"/>
+<connect gate="A" pin="PA3" pad="5"/>
+<connect gate="A" pin="PA4" pad="6"/>
+<connect gate="A" pin="PA5" pad="7"/>
+<connect gate="A" pin="PA6" pad="8"/>
+<connect gate="A" pin="PA7" pad="9"/>
+<connect gate="A" pin="PB0" pad="10"/>
+<connect gate="A" pin="PB1" pad="11"/>
+<connect gate="A" pin="PB2" pad="12"/>
+<connect gate="A" pin="PB3" pad="13"/>
+<connect gate="A" pin="PB4" pad="14"/>
+<connect gate="A" pin="PB5" pad="15"/>
+<connect gate="A" pin="PB6" pad="16"/>
+<connect gate="A" pin="PB7" pad="17"/>
+<connect gate="A" pin="R/!W" pad="21"/>
+<connect gate="A" pin="RESET" pad="34"/>
+<connect gate="A" pin="RS0" pad="36"/>
+<connect gate="A" pin="RS1" pad="35"/>
+<connect gate="P" pin="GND" pad="20"/>
+<connect gate="P" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC6840" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;MICROCONTROLLER/MEMORY DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC6840" x="25.4" y="0"/>
+<gate name="P" symbol="PWRN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP-28">
+<connects>
+<connect gate="A" pin="C1" pad="28"/>
+<connect gate="A" pin="C2" pad="4"/>
+<connect gate="A" pin="C3" pad="7"/>
+<connect gate="A" pin="CS0" pad="15"/>
+<connect gate="A" pin="CS1" pad="16"/>
+<connect gate="A" pin="D0" pad="25"/>
+<connect gate="A" pin="D1" pad="24"/>
+<connect gate="A" pin="D2" pad="23"/>
+<connect gate="A" pin="D3" pad="22"/>
+<connect gate="A" pin="D4" pad="21"/>
+<connect gate="A" pin="D5" pad="20"/>
+<connect gate="A" pin="D6" pad="19"/>
+<connect gate="A" pin="D7" pad="18"/>
+<connect gate="A" pin="E" pad="17"/>
+<connect gate="A" pin="G1" pad="26"/>
+<connect gate="A" pin="G2" pad="2"/>
+<connect gate="A" pin="G3" pad="5"/>
+<connect gate="A" pin="IRQ" pad="9"/>
+<connect gate="A" pin="O1" pad="27"/>
+<connect gate="A" pin="O2" pad="3"/>
+<connect gate="A" pin="O3" pad="6"/>
+<connect gate="A" pin="R/!W" pad="13"/>
+<connect gate="A" pin="RESET" pad="8"/>
+<connect gate="A" pin="RS0" pad="10"/>
+<connect gate="A" pin="RS1" pad="11"/>
+<connect gate="A" pin="RS2" pad="12"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC6844" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;MICROCONTROLLER/MEMORY DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC6844" x="27.94" y="0"/>
+<gate name="P" symbol="PWRN" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP-40">
+<connects>
+<connect gate="A" pin="!CS!/TX" pad="2"/>
+<connect gate="A" pin="A0" pad="4"/>
+<connect gate="A" pin="A1" pad="5"/>
+<connect gate="A" pin="A10" pad="14"/>
+<connect gate="A" pin="A11" pad="15"/>
+<connect gate="A" pin="A12" pad="16"/>
+<connect gate="A" pin="A13" pad="17"/>
+<connect gate="A" pin="A14" pad="18"/>
+<connect gate="A" pin="A15" pad="19"/>
+<connect gate="A" pin="A2" pad="6"/>
+<connect gate="A" pin="A3" pad="7"/>
+<connect gate="A" pin="A4" pad="8"/>
+<connect gate="A" pin="A5" pad="9"/>
+<connect gate="A" pin="A6" pad="10"/>
+<connect gate="A" pin="A7" pad="11"/>
+<connect gate="A" pin="A8" pad="12"/>
+<connect gate="A" pin="A9" pad="13"/>
+<connect gate="A" pin="D0" pad="28"/>
+<connect gate="A" pin="D1" pad="27"/>
+<connect gate="A" pin="D2" pad="26"/>
+<connect gate="A" pin="D3" pad="25"/>
+<connect gate="A" pin="D4" pad="24"/>
+<connect gate="A" pin="D5" pad="23"/>
+<connect gate="A" pin="D6" pad="22"/>
+<connect gate="A" pin="D7" pad="21"/>
+<connect gate="A" pin="DGRNT" pad="38"/>
+<connect gate="A" pin="DRQ1" pad="37"/>
+<connect gate="A" pin="DRQ2" pad="36"/>
+<connect gate="A" pin="E" pad="40"/>
+<connect gate="A" pin="IRQ/DEND" pad="33"/>
+<connect gate="A" pin="R/!W" pad="3"/>
+<connect gate="A" pin="RESET" pad="39"/>
+<connect gate="A" pin="TXAKA" pad="35"/>
+<connect gate="A" pin="TXRQ0" pad="32"/>
+<connect gate="A" pin="TXRQ1" pad="31"/>
+<connect gate="A" pin="TXRQ2" pad="30"/>
+<connect gate="A" pin="TXRQ3" pad="29"/>
+<connect gate="A" pin="TXSTB" pad="34"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VCC" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC6845" prefix="IC">
+<description>&lt;b&gt;MICROCONTROLLER/MEMORY DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC6845" x="27.94" y="0"/>
+<gate name="P" symbol="PWRN" x="0" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIP-40">
+<connects>
+<connect gate="A" pin="CLK" pad="21"/>
+<connect gate="A" pin="CS" pad="25"/>
+<connect gate="A" pin="CURSOR" pad="19"/>
+<connect gate="A" pin="D0" pad="33"/>
+<connect gate="A" pin="D1" pad="32"/>
+<connect gate="A" pin="D2" pad="31"/>
+<connect gate="A" pin="D3" pad="30"/>
+<connect gate="A" pin="D4" pad="29"/>
+<connect gate="A" pin="D5" pad="28"/>
+<connect gate="A" pin="D6" pad="27"/>
+<connect gate="A" pin="D7" pad="26"/>
+<connect gate="A" pin="DE" pad="18"/>
+<connect gate="A" pin="E" pad="23"/>
+<connect gate="A" pin="HS" pad="39"/>
+<connect gate="A" pin="LPSTD" pad="3"/>
+<connect gate="A" pin="MA0" pad="4"/>
+<connect gate="A" pin="MA1" pad="5"/>
+<connect gate="A" pin="MA10" pad="14"/>
+<connect gate="A" pin="MA11" pad="15"/>
+<connect gate="A" pin="MA12" pad="16"/>
+<connect gate="A" pin="MA13" pad="17"/>
+<connect gate="A" pin="MA2" pad="6"/>
+<connect gate="A" pin="MA3" pad="7"/>
+<connect gate="A" pin="MA4" pad="8"/>
+<connect gate="A" pin="MA5" pad="9"/>
+<connect gate="A" pin="MA6" pad="10"/>
+<connect gate="A" pin="MA7" pad="11"/>
+<connect gate="A" pin="MA8" pad="12"/>
+<connect gate="A" pin="MA9" pad="13"/>
+<connect gate="A" pin="R/!W" pad="22"/>
+<connect gate="A" pin="RA0" pad="38"/>
+<connect gate="A" pin="RA1" pad="37"/>
+<connect gate="A" pin="RA2" pad="36"/>
+<connect gate="A" pin="RA3" pad="35"/>
+<connect gate="A" pin="RA4" pad="34"/>
+<connect gate="A" pin="RESET" pad="2"/>
+<connect gate="A" pin="RS" pad="24"/>
+<connect gate="A" pin="VS" pad="40"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VCC" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC6847" prefix="IC">
+<gates>
+<gate name="G$1" symbol="MC6847" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP-40">
+<connects>
+<connect gate="G$1" pin="!FS" pad="37"/>
+<connect gate="G$1" pin="!HS" pad="38"/>
+<connect gate="G$1" pin="!MS" pad="12"/>
+<connect gate="G$1" pin="!RP" pad="36"/>
+<connect gate="G$1" pin="A/G" pad="35"/>
+<connect gate="G$1" pin="A/S" pad="34"/>
+<connect gate="G$1" pin="CHB" pad="9"/>
+<connect gate="G$1" pin="CLK" pad="33"/>
+<connect gate="G$1" pin="CSS" pad="39"/>
+<connect gate="G$1" pin="D0" pad="3"/>
+<connect gate="G$1" pin="D1" pad="4"/>
+<connect gate="G$1" pin="D2" pad="5"/>
+<connect gate="G$1" pin="D3" pad="6"/>
+<connect gate="G$1" pin="D4" pad="7"/>
+<connect gate="G$1" pin="D5" pad="8"/>
+<connect gate="G$1" pin="D6" pad="2"/>
+<connect gate="G$1" pin="D7" pad="40"/>
+<connect gate="G$1" pin="DA0" pad="22"/>
+<connect gate="G$1" pin="DA1" pad="23"/>
+<connect gate="G$1" pin="DA10" pad="19"/>
+<connect gate="G$1" pin="DA11" pad="20"/>
+<connect gate="G$1" pin="DA12" pad="21"/>
+<connect gate="G$1" pin="DA2" pad="24"/>
+<connect gate="G$1" pin="DA3" pad="25"/>
+<connect gate="G$1" pin="DA4" pad="26"/>
+<connect gate="G$1" pin="DA5" pad="13"/>
+<connect gate="G$1" pin="DA6" pad="14"/>
+<connect gate="G$1" pin="DA7" pad="15"/>
+<connect gate="G$1" pin="DA8" pad="16"/>
+<connect gate="G$1" pin="DA9" pad="18"/>
+<connect gate="G$1" pin="GM0" pad="30"/>
+<connect gate="G$1" pin="GM1" pad="29"/>
+<connect gate="G$1" pin="GM2" pad="27"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="INT/EXT" pad="31"/>
+<connect gate="G$1" pin="INV" pad="32"/>
+<connect gate="G$1" pin="OA" pad="10"/>
+<connect gate="G$1" pin="OB" pad="11"/>
+<connect gate="G$1" pin="VCC" pad="17"/>
+<connect gate="G$1" pin="Y" pad="28"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC6850" prefix="IC">
+<description>&lt;html&gt;
+&lt;head&gt;
+   &lt;meta name="Author" content="John &amp; Robert Turner"&gt;
+   &lt;meta name="GENERATOR" content="http://www.GIMEchip.com/"&gt;
+   &lt;title&gt;MC6850 - http://www.GIMEchip.com/&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;
+MC6850 - ASYNCHRONOUS COMMUNICATIONS INTERFACE ADAPTER (ACIA)&lt;/h2&gt;
+&lt;center&gt;
+&lt;h3&gt;
+E.A.G.L.E. Library Part created by J&amp;amp;R - &lt;a href="mailto:sales@gimechip.com?subject=MC6850 - ASYNCHRONOUS COMMUNICATIONS INTERFACE ADAPTER (ACIA) E.A.G.L.E. Library Part"&gt;sales@gimechip.com&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;
+&lt;center&gt;&lt;table BORDER COLS=1 WIDTH="100%" &gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;center&gt;&lt;b&gt;COMPATIBILITY&lt;/b&gt;
+&lt;br&gt;&lt;b&gt;This E.A.G.L.E. Library Part is compatible with all variants of
+the 6850 in the 24-pin DIP package, including the following:&lt;/b&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;table BORDER COLS=5 WIDTH="100%" &gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;center&gt;Manufacturer&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;Type&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;Process&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;Clock Frequency&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;Package&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+&lt;center&gt;Motorola
+&lt;br&gt;Freescale
+&lt;br&gt;Semiconductors&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;MC6850L
+&lt;br&gt;MC6850CL
+&lt;br&gt;MC68A50L
+&lt;br&gt;MC68A50CL
+&lt;br&gt;MC68B50C&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;MOS
+&lt;br&gt;(N-CHANNEL,
+&lt;br&gt;SILICON-GATE)&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;1.0 MHz
+&lt;br&gt;1.0 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;2.0 MHz&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;Ceramic
+&lt;br&gt;L Suffix&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+&lt;center&gt;Motorola
+&lt;br&gt;Freescale
+&lt;br&gt;Semiconductors&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;MC6850S
+&lt;br&gt;MC6850CS
+&lt;br&gt;MC68A50S
+&lt;br&gt;MC68A50CS
+&lt;br&gt;MC68B50S&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;MOS
+&lt;br&gt;(N-CHANNEL,
+&lt;br&gt;SILICON-GATE)&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;1.0 MHz
+&lt;br&gt;1.0 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;2.0 MHz&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;Cerdip
+&lt;br&gt;S Suffix&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+&lt;center&gt;Motorola
+&lt;br&gt;Freescale
+&lt;br&gt;Semiconductors&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;MC6850P
+&lt;br&gt;MC6850CP
+&lt;br&gt;MC68A50P
+&lt;br&gt;MC68A50CP
+&lt;br&gt;MC68B50P&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;MOS
+&lt;br&gt;(N-CHANNEL,
+&lt;br&gt;SILICON-GATE)&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;1.0 MHz
+&lt;br&gt;1.0 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;2.0 MHz&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;Plastic
+&lt;br&gt;P Suffix&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+&lt;center&gt;Hitachi
+&lt;br&gt;Semiconductors&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;HD6350P
+&lt;br&gt;HD63A50P
+&lt;br&gt;HD63B50P
+&lt;br&gt;HD63C50P&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;CMOS&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;1.0 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;2.0 MHz
+&lt;br&gt;3.0 MHz&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;DP-24&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+&lt;center&gt;Hitachi
+&lt;br&gt;Semiconductors&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;HD6350FP
+&lt;br&gt;HD63A50FP
+&lt;br&gt;HD63B50FP
+&lt;br&gt;HD63C50FP&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;CMOS&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;1.0 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;2.0 MHz
+&lt;br&gt;3.0 MHz&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;FP-24D&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+&lt;center&gt;Hitachi
+&lt;br&gt;Semiconductors&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;HD6850
+&lt;br&gt;HD68A50
+&lt;br&gt;HD68B50&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;NMOS&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;1.0 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;2.0 MHz&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;DC-24&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+&lt;center&gt;Hitachi
+&lt;br&gt;Semiconductors&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;HD6850P
+&lt;br&gt;HD68A50P
+&lt;br&gt;HD68B50P&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;NMOS&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;1.0 MHz
+&lt;br&gt;1.5 MHz
+&lt;br&gt;2.0 MHz&lt;/center&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;center&gt;DP-24&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;/center&gt;
+
+&lt;b&gt;NOTE: The Hitachi "C" parts are officially rated at 3 MHz, however,
+they are designed to operate at up to 5 MHz clock speeds.&lt;/b&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;/center&gt;
+&lt;center&gt;&lt;b&gt;MOTOROLA (FREESCALE) SEMICONDUCTORS&lt;/b&gt;
+&lt;br&gt;&lt;b&gt;MC6850 - MOS (N-CHANNEL, SILICON-GATE)&lt;/b&gt;
+&lt;br&gt;&lt;b&gt;ASYNCHRONOUS COMMUNICATIONS INTERFACE ADAPTER&lt;/b&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;table BORDER COLS=1 WIDTH="100%" &gt;
+&lt;tr&gt;
+&lt;td&gt;The MC6850 Asynchronous Communications Interface Adapter provides the
+data formatting and control to interface serial&amp;nbsp; asynchronous data
+communications information to bus organized systems such as the MC6800
+and MC6809 Microprocessing Units.
+&lt;p&gt;The bus interface of the MC6850 includes select, enable, read/write,
+interrupt and bus interface logic to allow data transfer over an 8-bit
+bidirectional data bus. The parallel data of the bus system is serially
+transmitted and received by the asynchronous data interface, with proper
+formatting and error checking. The functional configuration of the ACIA
+is programmed via the data bus during system initialization. A programmable
+Control Register provides variable word lengths, clock division ratios,
+transmit control, receive control, and interrupt control. For peripheral
+or modem operation, three control lines are provided. These lines allow
+the ACIA to interface directly with the MC6860L 0-600 bps digital modem.
+&lt;p&gt;&lt;b&gt;FEATURES&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;b&gt;8- and 9-Bit Transmission&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Optional Even and Odd Parity&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Parity, Overrun and Framing Error Checking&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Programmable Control Register&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Optional &amp;divide; 1, &amp;divide; 16, and &amp;divide; 64 Clock Modes&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Up to 1.0 Mbps Transmission&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;False Start Bit Deletion&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Peripheral/Modem Control Functions&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Double Buffered&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;One- or Two-Stop Bit Operation&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;b&gt;HD6350/HD6850 Series&lt;/b&gt;
+&lt;br&gt;&lt;b&gt;ACIA (Asynchronous Communications Interface Adapter)&lt;/b&gt;
+&lt;br&gt;&lt;b&gt;HD6350 = CMOS, HD6850 = NMOS&lt;/b&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;table BORDER COLS=1 WIDTH="100%" &gt;
+&lt;tr&gt;
+&lt;td&gt;The HD6350/HD6850 Asynchronous Communications Interface Adapter provides
+the data formatting and control to interface serial asynchronous data communications
+information to bus organized systems such as the HMCS6800 Microprocessing
+Unit (MPU).
+&lt;p&gt;The bus interface of the HD6350/HD6850 includes select, enable, read/writer,
+interrupt and bus interface logic to allow data transfer over an 8-bit
+bi-directional data bus. The parrallel data of the bus system is serially
+transmitted and received by the asynchronous data interface with proper
+formatting and error checking.
+&lt;p&gt;The functional configuration of the ACIA is programmed via the data
+bus during system initialization. A programmable Control Register provides
+variable word lengths, clock division ratios, transmit control, receive
+control, and interrupt control. For peripheral or modern operation three
+control lines are provided.
+&lt;p&gt;&lt;b&gt;FEATURES&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;b&gt;Serial/Parallel Conversion of Data&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Seven and Eight-bit Transmission&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Optional Even and Odd Parity&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Parity, Overrun and Framing Error Checking&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Peripheral/Modem Control Functions (Clear to Send&amp;nbsp;&lt;span style="text-decoration: overline"&gt;CTS&lt;/span&gt;,
+Request to Send &lt;span style="text-decoration: overline"&gt;RTS&lt;/span&gt;, Data Carrier Detect &lt;span style="text-decoration: overline"&gt;DCD&lt;/span&gt;)&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Optional &amp;divide; 1, &amp;divide; 16, and &amp;divide; 64 Clock Modes&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;One-or Two-Stop Bit Operation&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Double Buffered&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;- HD6350 -&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;b&gt;Low-Power, High-Speed, High-Density CMOS&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Compatible with NMOS ACIA (HD6850)&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Wide Range Operating Voltage (V&lt;sub&gt;CC&lt;/sub&gt; = 5V &amp;plusmn;10%)&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Up to 1Mbps Transmission&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;- HD6850 -&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;b&gt;Compatible with MC6850 and MC68A50&lt;/b&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;b&gt;Up to 500Kbps Transmission&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;/center&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</description>
+<gates>
+<gate name="A" symbol="MC6850" x="27.94" y="0"/>
+<gate name="P" symbol="PWRN" x="0" y="5.08" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIP-24">
+<connects>
+<connect gate="A" pin="CS0" pad="8"/>
+<connect gate="A" pin="CS1" pad="10"/>
+<connect gate="A" pin="CS2" pad="9"/>
+<connect gate="A" pin="CTS" pad="24"/>
+<connect gate="A" pin="D0" pad="22"/>
+<connect gate="A" pin="D1" pad="21"/>
+<connect gate="A" pin="D2" pad="20"/>
+<connect gate="A" pin="D3" pad="19"/>
+<connect gate="A" pin="D4" pad="18"/>
+<connect gate="A" pin="D5" pad="17"/>
+<connect gate="A" pin="D6" pad="16"/>
+<connect gate="A" pin="D7" pad="15"/>
+<connect gate="A" pin="DCD" pad="23"/>
+<connect gate="A" pin="E" pad="14"/>
+<connect gate="A" pin="IRQ" pad="7"/>
+<connect gate="A" pin="R/!W" pad="13"/>
+<connect gate="A" pin="RS" pad="11"/>
+<connect gate="A" pin="RTS" pad="5"/>
+<connect gate="A" pin="RXCLK" pad="3"/>
+<connect gate="A" pin="RXDATA" pad="2"/>
+<connect gate="A" pin="TXCLK" pad="4"/>
+<connect gate="A" pin="TXDATA" pad="6"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VCC" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC6852" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;MICROCONTROLLER/MEMORY DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC6852" x="27.94" y="0"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP-24">
+<connects>
+<connect gate="A" pin="CS" pad="10"/>
+<connect gate="A" pin="CTS" pad="24"/>
+<connect gate="A" pin="D0" pad="22"/>
+<connect gate="A" pin="D1" pad="21"/>
+<connect gate="A" pin="D2" pad="20"/>
+<connect gate="A" pin="D3" pad="19"/>
+<connect gate="A" pin="D4" pad="18"/>
+<connect gate="A" pin="D5" pad="17"/>
+<connect gate="A" pin="D6" pad="16"/>
+<connect gate="A" pin="D7" pad="15"/>
+<connect gate="A" pin="DCD" pad="23"/>
+<connect gate="A" pin="E" pad="14"/>
+<connect gate="A" pin="IRQ" pad="7"/>
+<connect gate="A" pin="R/!W" pad="13"/>
+<connect gate="A" pin="RESET" pad="9"/>
+<connect gate="A" pin="RS" pad="11"/>
+<connect gate="A" pin="RXCLK" pad="3"/>
+<connect gate="A" pin="RXDATA" pad="2"/>
+<connect gate="A" pin="SM/!DTR" pad="5"/>
+<connect gate="A" pin="TUF" pad="8"/>
+<connect gate="A" pin="TXCLK" pad="4"/>
+<connect gate="A" pin="TXDATA" pad="6"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VCC" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC6854" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;MICROCONTROLLER/MEMORY DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC6854" x="27.94" y="0"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP-28">
+<connects>
+<connect gate="A" pin="CS" pad="9"/>
+<connect gate="A" pin="CTS" pad="28"/>
+<connect gate="A" pin="D0" pad="22"/>
+<connect gate="A" pin="D1" pad="21"/>
+<connect gate="A" pin="D2" pad="20"/>
+<connect gate="A" pin="D3" pad="19"/>
+<connect gate="A" pin="D4" pad="18"/>
+<connect gate="A" pin="D5" pad="17"/>
+<connect gate="A" pin="D6" pad="16"/>
+<connect gate="A" pin="D7" pad="15"/>
+<connect gate="A" pin="DCD" pad="27"/>
+<connect gate="A" pin="E" pad="13"/>
+<connect gate="A" pin="FLAG_DET" pad="25"/>
+<connect gate="A" pin="IRQ" pad="7"/>
+<connect gate="A" pin="LOC/DTR" pad="26"/>
+<connect gate="A" pin="R/!W" pad="12"/>
+<connect gate="A" pin="RDSR" pad="23"/>
+<connect gate="A" pin="RESET" pad="8"/>
+<connect gate="A" pin="RS1" pad="11"/>
+<connect gate="A" pin="RSO" pad="10"/>
+<connect gate="A" pin="RTS" pad="2"/>
+<connect gate="A" pin="RXC" pad="4"/>
+<connect gate="A" pin="RXD" pad="3"/>
+<connect gate="A" pin="TDSR" pad="24"/>
+<connect gate="A" pin="TXC" pad="5"/>
+<connect gate="A" pin="TXD" pad="6"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
