@@ -985,7 +985,7 @@
 <deviceset name="AS6C1608-XX" prefix="IC">
 <gates>
 <gate name="A" symbol="AS6C1608" x="0" y="0"/>
-<gate name="G$2" symbol="PWR2GND2" x="-25.4" y="0" addlevel="request"/>
+<gate name="P" symbol="PWR2GND2" x="-25.4" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="TIN" package="TSOP44-II">
@@ -1023,10 +1023,10 @@
 <connect gate="A" pin="D5" pad="32"/>
 <connect gate="A" pin="D6" pad="35"/>
 <connect gate="A" pin="D7" pad="36"/>
-<connect gate="G$2" pin="GND@1" pad="12"/>
-<connect gate="G$2" pin="GND@2" pad="34"/>
-<connect gate="G$2" pin="VCC@1" pad="11"/>
-<connect gate="G$2" pin="VCC@2" pad="33"/>
+<connect gate="P" pin="GND@1" pad="12"/>
+<connect gate="P" pin="GND@2" pad="34"/>
+<connect gate="P" pin="VCC@1" pad="11"/>
+<connect gate="P" pin="VCC@2" pad="33"/>
 </connects>
 <technologies>
 <technology name=""/>
