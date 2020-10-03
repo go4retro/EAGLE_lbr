@@ -11143,7 +11143,14 @@ Source: 8x ADG1408_1409.pdf</description>
 <connect gate="P" pin="VCC" pad="14"/>
 </connects>
 <technologies>
+<technology name=""/>
+<technology name="ABT"/>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="HC"/>
+<technology name="HCT"/>
 <technology name="LS"/>
+<technology name="LVC"/>
 <technology name="S"/>
 </technologies>
 </device>
@@ -17776,7 +17783,13 @@ Source: 8x ADG1408_1409.pdf</description>
 <connect gate="P" pin="VCC" pad="20"/>
 </connects>
 <technologies>
+<technology name="ABT"/>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="HC"/>
+<technology name="HCT"/>
 <technology name="LS"/>
+<technology name="LVC"/>
 <technology name="S"/>
 </technologies>
 </device>
@@ -19782,9 +19795,13 @@ Source: 8x ADG1408_1409.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="ABT"/>
 <technology name="ALS"/>
 <technology name="AS"/>
+<technology name="HC"/>
+<technology name="HCT"/>
 <technology name="LS"/>
+<technology name="LVC"/>
 <technology name="S"/>
 </technologies>
 </device>
@@ -20872,7 +20889,13 @@ Source: 8x ADG1408_1409.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="ABT"/>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="HC"/>
+<technology name="HCT"/>
 <technology name="LS"/>
+<technology name="LVC"/>
 <technology name="S"/>
 </technologies>
 </device>
@@ -24234,7 +24257,14 @@ Source: 8x ADG1408_1409.pdf</description>
 <connect gate="P" pin="VCC" pad="20"/>
 </connects>
 <technologies>
+<technology name="ABT"/>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="HC"/>
+<technology name="HCT"/>
 <technology name="LS"/>
+<technology name="LVC"/>
+<technology name="S"/>
 </technologies>
 </device>
 <device name="DW" package="SO20W">

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1813,7 +1813,7 @@ Source: xcv100_tq144_1532.bsd; tq144.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="XC95144XLTQG144">
+<deviceset name="XC95144XLTQG144" prefix="IC">
 <gates>
 <gate name="G$1" symbol="XC95144XLTQG144" x="0" y="0"/>
 </gates>
@@ -1995,6 +1995,164 @@ Source: xcv100_tq144_1532.bsd; tq144.pdf</description>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XC95288XLTQG144" prefix="IC">
+<gates>
+<gate name="G$1" symbol="XC95144XLTQG144" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP144">
+<connects>
+<connect gate="G$1" pin="FB1MC1" pad="23"/>
+<connect gate="G$1" pin="FB1MC10" pad="31"/>
+<connect gate="G$1" pin="FB1MC11" pad="24"/>
+<connect gate="G$1" pin="FB1MC12" pad="26"/>
+<connect gate="G$1" pin="FB1MC14" pad="27"/>
+<connect gate="G$1" pin="FB1MC15" pad="28"/>
+<connect gate="G$1" pin="FB1MC16" pad="35"/>
+<connect gate="G$1" pin="FB1MC17-I/O/GCK1" pad="30"/>
+<connect gate="G$1" pin="FB1MC2" pad="16"/>
+<connect gate="G$1" pin="FB1MC3" pad="17"/>
+<connect gate="G$1" pin="FB1MC4" pad="25"/>
+<connect gate="G$1" pin="FB1MC5" pad="19"/>
+<connect gate="G$1" pin="FB1MC6" pad="20"/>
+<connect gate="G$1" pin="FB1MC8" pad="21"/>
+<connect gate="G$1" pin="FB1MC9" pad="22"/>
+<connect gate="G$1" pin="FB2MC1" pad="142"/>
+<connect gate="G$1" pin="FB2MC10" pad="7"/>
+<connect gate="G$1" pin="FB2MC11" pad="9"/>
+<connect gate="G$1" pin="FB2MC12" pad="10"/>
+<connect gate="G$1" pin="FB2MC13" pad="12"/>
+<connect gate="G$1" pin="FB2MC14" pad="11"/>
+<connect gate="G$1" pin="FB2MC15" pad="13"/>
+<connect gate="G$1" pin="FB2MC16" pad="14"/>
+<connect gate="G$1" pin="FB2MC17" pad="15"/>
+<connect gate="G$1" pin="FB2MC2-I/O/GSR" pad="143"/>
+<connect gate="G$1" pin="FB2MC4" pad="4"/>
+<connect gate="G$1" pin="FB2MC5" pad="2"/>
+<connect gate="G$1" pin="FB2MC6" pad="3"/>
+<connect gate="G$1" pin="FB2MC8-GTS1" pad="5"/>
+<connect gate="G$1" pin="FB2MC9-I/O/GTS2" pad="6"/>
+<connect gate="G$1" pin="FB3MC1" pad="39"/>
+<connect gate="G$1" pin="FB3MC10" pad="48"/>
+<connect gate="G$1" pin="FB3MC11" pad="43"/>
+<connect gate="G$1" pin="FB3MC12" pad="45"/>
+<connect gate="G$1" pin="FB3MC14" pad="49"/>
+<connect gate="G$1" pin="FB3MC15" pad="50"/>
+<connect gate="G$1" pin="FB3MC17" pad="51"/>
+<connect gate="G$1" pin="FB3MC2-I/O/GCK2" pad="32"/>
+<connect gate="G$1" pin="FB3MC3" pad="41"/>
+<connect gate="G$1" pin="FB3MC4" pad="44"/>
+<connect gate="G$1" pin="FB3MC5" pad="33"/>
+<connect gate="G$1" pin="FB3MC6" pad="34"/>
+<connect gate="G$1" pin="FB3MC7" pad="46"/>
+<connect gate="G$1" pin="FB3MC8-I/O/GCK3" pad="38"/>
+<connect gate="G$1" pin="FB3MC9" pad="40"/>
+<connect gate="G$1" pin="FB4MC1" pad="118"/>
+<connect gate="G$1" pin="FB4MC10" pad="135"/>
+<connect gate="G$1" pin="FB4MC11" pad="132"/>
+<connect gate="G$1" pin="FB4MC12" pad="134"/>
+<connect gate="G$1" pin="FB4MC13" pad="137"/>
+<connect gate="G$1" pin="FB4MC14" pad="136"/>
+<connect gate="G$1" pin="FB4MC15" pad="138"/>
+<connect gate="G$1" pin="FB4MC16" pad="139"/>
+<connect gate="G$1" pin="FB4MC17" pad="140"/>
+<connect gate="G$1" pin="FB4MC2" pad="126"/>
+<connect gate="G$1" pin="FB4MC3" pad="133"/>
+<connect gate="G$1" pin="FB4MC5" pad="128"/>
+<connect gate="G$1" pin="FB4MC6" pad="129"/>
+<connect gate="G$1" pin="FB4MC8" pad="130"/>
+<connect gate="G$1" pin="FB4MC9" pad="131"/>
+<connect gate="G$1" pin="FB5MC10" pad="68"/>
+<connect gate="G$1" pin="FB5MC11" pad="58"/>
+<connect gate="G$1" pin="FB5MC12" pad="60"/>
+<connect gate="G$1" pin="FB5MC13" pad="70"/>
+<connect gate="G$1" pin="FB5MC14" pad="61"/>
+<connect gate="G$1" pin="FB5MC15" pad="64"/>
+<connect gate="G$1" pin="FB5MC17" pad="69"/>
+<connect gate="G$1" pin="FB5MC2" pad="52"/>
+<connect gate="G$1" pin="FB5MC3" pad="59"/>
+<connect gate="G$1" pin="FB5MC5" pad="53"/>
+<connect gate="G$1" pin="FB5MC6" pad="54"/>
+<connect gate="G$1" pin="FB5MC7" pad="66"/>
+<connect gate="G$1" pin="FB5MC8" pad="56"/>
+<connect gate="G$1" pin="FB5MC9" pad="57"/>
+<connect gate="G$1" pin="FB6MC10" pad="115"/>
+<connect gate="G$1" pin="FB6MC11" pad="119"/>
+<connect gate="G$1" pin="FB6MC12" pad="120"/>
+<connect gate="G$1" pin="FB6MC14" pad="121"/>
+<connect gate="G$1" pin="FB6MC15" pad="124"/>
+<connect gate="G$1" pin="FB6MC16" pad="117"/>
+<connect gate="G$1" pin="FB6MC17" pad="125"/>
+<connect gate="G$1" pin="FB6MC2" pad="106"/>
+<connect gate="G$1" pin="FB6MC4" pad="111"/>
+<connect gate="G$1" pin="FB6MC5" pad="110"/>
+<connect gate="G$1" pin="FB6MC6" pad="112"/>
+<connect gate="G$1" pin="FB6MC8" pad="113"/>
+<connect gate="G$1" pin="FB6MC9" pad="116"/>
+<connect gate="G$1" pin="FB7MC10" pad="79"/>
+<connect gate="G$1" pin="FB7MC11" pad="82"/>
+<connect gate="G$1" pin="FB7MC12" pad="85"/>
+<connect gate="G$1" pin="FB7MC13" pad="81"/>
+<connect gate="G$1" pin="FB7MC14" pad="86"/>
+<connect gate="G$1" pin="FB7MC15" pad="87"/>
+<connect gate="G$1" pin="FB7MC16" pad="83"/>
+<connect gate="G$1" pin="FB7MC17" pad="88"/>
+<connect gate="G$1" pin="FB7MC2" pad="71"/>
+<connect gate="G$1" pin="FB7MC3" pad="75"/>
+<connect gate="G$1" pin="FB7MC5" pad="74"/>
+<connect gate="G$1" pin="FB7MC6" pad="76"/>
+<connect gate="G$1" pin="FB7MC7" pad="77"/>
+<connect gate="G$1" pin="FB7MC8" pad="78"/>
+<connect gate="G$1" pin="FB7MC9" pad="80"/>
+<connect gate="G$1" pin="FB8MC10" pad="101"/>
+<connect gate="G$1" pin="FB8MC11" pad="98"/>
+<connect gate="G$1" pin="FB8MC12" pad="100"/>
+<connect gate="G$1" pin="FB8MC13" pad="103"/>
+<connect gate="G$1" pin="FB8MC14" pad="102"/>
+<connect gate="G$1" pin="FB8MC15" pad="104"/>
+<connect gate="G$1" pin="FB8MC16" pad="107"/>
+<connect gate="G$1" pin="FB8MC17" pad="105"/>
+<connect gate="G$1" pin="FB8MC2" pad="91"/>
+<connect gate="G$1" pin="FB8MC3" pad="95"/>
+<connect gate="G$1" pin="FB8MC4" pad="97"/>
+<connect gate="G$1" pin="FB8MC5" pad="92"/>
+<connect gate="G$1" pin="FB8MC6" pad="93"/>
+<connect gate="G$1" pin="FB8MC8" pad="94"/>
+<connect gate="G$1" pin="FB8MC9" pad="96"/>
+<connect gate="G$1" pin="GND@1" pad="18"/>
+<connect gate="G$1" pin="GND@10" pad="108"/>
+<connect gate="G$1" pin="GND@11" pad="114"/>
+<connect gate="G$1" pin="GND@12" pad="123"/>
+<connect gate="G$1" pin="GND@13" pad="144"/>
+<connect gate="G$1" pin="GND@2" pad="29"/>
+<connect gate="G$1" pin="GND@3" pad="36"/>
+<connect gate="G$1" pin="GND@4" pad="47"/>
+<connect gate="G$1" pin="GND@5" pad="62"/>
+<connect gate="G$1" pin="GND@6" pad="72"/>
+<connect gate="G$1" pin="GND@7" pad="89"/>
+<connect gate="G$1" pin="GND@8" pad="90"/>
+<connect gate="G$1" pin="GND@9" pad="99"/>
+<connect gate="G$1" pin="TCK" pad="67"/>
+<connect gate="G$1" pin="TDI" pad="63"/>
+<connect gate="G$1" pin="TDO" pad="122"/>
+<connect gate="G$1" pin="TMS" pad="65"/>
+<connect gate="G$1" pin="VCCINT3,3V@1" pad="8"/>
+<connect gate="G$1" pin="VCCINT3,3V@2" pad="42"/>
+<connect gate="G$1" pin="VCCINT3,3V@3" pad="84"/>
+<connect gate="G$1" pin="VCCINT3,3V@4" pad="141"/>
+<connect gate="G$1" pin="VCCIO2,5V/3,3V@1" pad="1"/>
+<connect gate="G$1" pin="VCCIO2,5V/3,3V@2" pad="37"/>
+<connect gate="G$1" pin="VCCIO2,5V/3,3V@3" pad="55"/>
+<connect gate="G$1" pin="VCCIO2,5V/3,3V@4" pad="73"/>
+<connect gate="G$1" pin="VCCIO2,5V/3,3V@5" pad="109"/>
+<connect gate="G$1" pin="VCCIO2,5V/3,3V@6" pad="127"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

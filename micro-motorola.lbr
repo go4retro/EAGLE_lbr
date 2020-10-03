@@ -15,11 +15,11 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -4741,6 +4741,136 @@ shrink quad flat pack, square</description>
 <pad name="24" x="-13.97" y="7.62" drill="0.8128" rot="R90"/>
 <text x="-15.875" y="-6.35" size="1.778" layer="25" rot="R90">&gt;NAME</text>
 <text x="-4.445" y="-0.635" size="1.778" layer="27">&gt;VALUE</text>
+</package>
+<package name="DIL40-SMD-REVERSE">
+<wire x1="25.4" y1="6.731" x2="-25.4" y2="6.731" width="0.1524" layer="22"/>
+<wire x1="-25.4" y1="-6.731" x2="25.4" y2="-6.731" width="0.1524" layer="22"/>
+<wire x1="25.4" y1="6.731" x2="25.4" y2="-6.731" width="0.1524" layer="22"/>
+<wire x1="-25.4" y1="6.731" x2="-25.4" y2="1.016" width="0.1524" layer="22"/>
+<wire x1="-25.4" y1="-6.731" x2="-25.4" y2="-1.016" width="0.1524" layer="22"/>
+<wire x1="-25.4" y1="1.016" x2="-25.4" y2="-1.016" width="0.1524" layer="22" curve="-180"/>
+<smd name="1" x="-24.13" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="2" x="-21.59" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="3" x="-19.05" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="4" x="-16.51" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="5" x="-13.97" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="6" x="-11.43" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="7" x="-8.89" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="8" x="-6.35" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="9" x="-3.81" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="10" x="-1.27" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="11" x="1.27" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="12" x="3.81" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="29" x="3.81" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="30" x="1.27" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="31" x="-1.27" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="32" x="-3.81" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="33" x="-6.35" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="34" x="-8.89" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="35" x="-11.43" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="36" x="-13.97" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="37" x="-16.51" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="38" x="-19.05" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="39" x="-21.59" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="40" x="-24.13" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="13" x="6.35" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="14" x="8.89" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="27" x="8.89" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<smd name="28" x="6.35" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<text x="-26.035" y="6.35" size="1.778" layer="25" rot="MR270">&gt;NAME</text>
+<text x="4.445" y="-0.635" size="1.778" layer="27" rot="MR0">&gt;VALUE</text>
+<rectangle x1="-24.63" y1="7.52" x2="-23.63" y2="10.52" layer="52"/>
+<rectangle x1="-24.63" y1="6.8" x2="-23.63" y2="7.52" layer="22"/>
+<rectangle x1="-22.09" y1="7.52" x2="-21.09" y2="10.52" layer="52"/>
+<rectangle x1="-19.55" y1="7.52" x2="-18.55" y2="10.52" layer="52"/>
+<rectangle x1="-17.01" y1="7.52" x2="-16.01" y2="10.52" layer="52"/>
+<rectangle x1="-14.47" y1="7.52" x2="-13.47" y2="10.52" layer="52"/>
+<rectangle x1="-11.93" y1="7.52" x2="-10.93" y2="10.52" layer="52"/>
+<rectangle x1="-9.39" y1="7.52" x2="-8.39" y2="10.52" layer="52"/>
+<rectangle x1="-6.85" y1="7.52" x2="-5.85" y2="10.52" layer="52"/>
+<rectangle x1="-4.31" y1="7.52" x2="-3.31" y2="10.52" layer="52"/>
+<rectangle x1="-1.77" y1="7.52" x2="-0.77" y2="10.52" layer="52"/>
+<rectangle x1="0.77" y1="7.52" x2="1.77" y2="10.52" layer="52"/>
+<rectangle x1="3.31" y1="7.52" x2="4.31" y2="10.52" layer="52"/>
+<rectangle x1="5.85" y1="7.52" x2="6.85" y2="10.52" layer="52"/>
+<rectangle x1="8.39" y1="7.52" x2="9.39" y2="10.52" layer="52"/>
+<rectangle x1="-24.63" y1="-10.52" x2="-23.63" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-22.09" y1="-10.52" x2="-21.09" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-19.55" y1="-10.52" x2="-18.55" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-17.01" y1="-10.52" x2="-16.01" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-14.47" y1="-10.52" x2="-13.47" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-11.93" y1="-10.52" x2="-10.93" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-9.39" y1="-10.52" x2="-8.39" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-6.85" y1="-10.52" x2="-5.85" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-4.31" y1="-10.52" x2="-3.31" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-1.77" y1="-10.52" x2="-0.77" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="0.77" y1="-10.52" x2="1.77" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="3.31" y1="-10.52" x2="4.31" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="5.85" y1="-10.52" x2="6.85" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="8.39" y1="-10.52" x2="9.39" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="-22.09" y1="6.8" x2="-21.09" y2="7.52" layer="22"/>
+<rectangle x1="-19.55" y1="6.8" x2="-18.55" y2="7.52" layer="22"/>
+<rectangle x1="-17.01" y1="6.8" x2="-16.01" y2="7.52" layer="22"/>
+<rectangle x1="-14.47" y1="6.8" x2="-13.47" y2="7.52" layer="22"/>
+<rectangle x1="-11.93" y1="6.8" x2="-10.93" y2="7.52" layer="22"/>
+<rectangle x1="-9.39" y1="6.8" x2="-8.39" y2="7.52" layer="22"/>
+<rectangle x1="-6.85" y1="6.8" x2="-5.85" y2="7.52" layer="22"/>
+<rectangle x1="-4.31" y1="6.8" x2="-3.31" y2="7.52" layer="22"/>
+<rectangle x1="-1.77" y1="6.8" x2="-0.77" y2="7.52" layer="22"/>
+<rectangle x1="0.77" y1="6.8" x2="1.77" y2="7.52" layer="22"/>
+<rectangle x1="3.31" y1="6.8" x2="4.31" y2="7.52" layer="22"/>
+<rectangle x1="5.85" y1="6.8" x2="6.85" y2="7.52" layer="22"/>
+<rectangle x1="8.39" y1="6.8" x2="9.39" y2="7.52" layer="22"/>
+<rectangle x1="-24.63" y1="-7.52" x2="-23.63" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="-22.09" y1="-7.52" x2="-21.09" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="-19.55" y1="-7.52" x2="-18.55" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="-17.01" y1="-7.52" x2="-16.01" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="-14.47" y1="-7.52" x2="-13.47" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="-11.93" y1="-7.52" x2="-10.93" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="-9.39" y1="-7.52" x2="-8.39" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="-6.85" y1="-7.52" x2="-5.85" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="-4.31" y1="-7.52" x2="-3.31" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="-1.77" y1="-7.52" x2="-0.77" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="0.77" y1="-7.52" x2="1.77" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="3.31" y1="-7.52" x2="4.31" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="5.85" y1="-7.52" x2="6.85" y2="-6.8" layer="22" rot="R180"/>
+<rectangle x1="8.39" y1="-7.52" x2="9.39" y2="-6.8" layer="22" rot="R180"/>
+<smd name="15" x="11.43" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="10.93" y1="-10.52" x2="11.93" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="10.93" y1="-7.52" x2="11.93" y2="-6.8" layer="22" rot="R180"/>
+<smd name="16" x="13.97" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="13.47" y1="-10.52" x2="14.47" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="13.47" y1="-7.52" x2="14.47" y2="-6.8" layer="22" rot="R180"/>
+<smd name="17" x="16.51" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="16.01" y1="-10.52" x2="17.01" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="16.01" y1="-7.52" x2="17.01" y2="-6.8" layer="22" rot="R180"/>
+<smd name="18" x="19.05" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="18.55" y1="-10.52" x2="19.55" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="18.55" y1="-7.52" x2="19.55" y2="-6.8" layer="22" rot="R180"/>
+<smd name="19" x="21.59" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="21.09" y1="-10.52" x2="22.09" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="21.09" y1="-7.52" x2="22.09" y2="-6.8" layer="22" rot="R180"/>
+<smd name="20" x="24.13" y="-8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="23.63" y1="-10.52" x2="24.63" y2="-7.52" layer="52" rot="R180"/>
+<rectangle x1="23.63" y1="-7.52" x2="24.63" y2="-6.8" layer="22" rot="R180"/>
+<smd name="26" x="11.43" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="10.93" y1="7.52" x2="11.93" y2="10.52" layer="52"/>
+<rectangle x1="10.93" y1="6.8" x2="11.93" y2="7.52" layer="22"/>
+<smd name="25" x="13.97" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="13.47" y1="7.52" x2="14.47" y2="10.52" layer="52"/>
+<rectangle x1="13.47" y1="6.8" x2="14.47" y2="7.52" layer="22"/>
+<smd name="24" x="16.51" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="16.01" y1="7.52" x2="17.01" y2="10.52" layer="52"/>
+<rectangle x1="16.01" y1="6.8" x2="17.01" y2="7.52" layer="22"/>
+<smd name="23" x="19.05" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="18.55" y1="7.52" x2="19.55" y2="10.52" layer="52"/>
+<rectangle x1="18.55" y1="6.8" x2="19.55" y2="7.52" layer="22"/>
+<smd name="22" x="21.59" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="21.09" y1="7.52" x2="22.09" y2="10.52" layer="52"/>
+<rectangle x1="21.09" y1="6.8" x2="22.09" y2="7.52" layer="22"/>
+<smd name="21" x="24.13" y="8.92" dx="3.5" dy="1" layer="16" rot="R90"/>
+<rectangle x1="23.63" y1="7.52" x2="24.63" y2="10.52" layer="52"/>
+<rectangle x1="23.63" y1="6.8" x2="24.63" y2="7.52" layer="22"/>
 </package>
 </packages>
 <symbols>
@@ -11430,6 +11560,53 @@ shrink quad flat pack, square</description>
 </technologies>
 </device>
 <device name="R" package="DIL40-ROUNDPAD">
+<connects>
+<connect gate="A" pin="!FIRQ" pad="4"/>
+<connect gate="A" pin="!HALT" pad="40"/>
+<connect gate="A" pin="!IRQ" pad="3"/>
+<connect gate="A" pin="!NMI" pad="2"/>
+<connect gate="A" pin="A0" pad="8"/>
+<connect gate="A" pin="A1" pad="9"/>
+<connect gate="A" pin="A10" pad="18"/>
+<connect gate="A" pin="A11" pad="19"/>
+<connect gate="A" pin="A12" pad="20"/>
+<connect gate="A" pin="A13" pad="21"/>
+<connect gate="A" pin="A14" pad="22"/>
+<connect gate="A" pin="A15" pad="23"/>
+<connect gate="A" pin="A2" pad="10"/>
+<connect gate="A" pin="A3" pad="11"/>
+<connect gate="A" pin="A4" pad="12"/>
+<connect gate="A" pin="A5" pad="13"/>
+<connect gate="A" pin="A6" pad="14"/>
+<connect gate="A" pin="A7" pad="15"/>
+<connect gate="A" pin="A8" pad="16"/>
+<connect gate="A" pin="A9" pad="17"/>
+<connect gate="A" pin="AVMA" pad="36"/>
+<connect gate="A" pin="BA" pad="6"/>
+<connect gate="A" pin="BS" pad="5"/>
+<connect gate="A" pin="BUSY" pad="33"/>
+<connect gate="A" pin="D0" pad="31"/>
+<connect gate="A" pin="D1" pad="30"/>
+<connect gate="A" pin="D2" pad="29"/>
+<connect gate="A" pin="D3" pad="28"/>
+<connect gate="A" pin="D4" pad="27"/>
+<connect gate="A" pin="D5" pad="26"/>
+<connect gate="A" pin="D6" pad="25"/>
+<connect gate="A" pin="D7" pad="24"/>
+<connect gate="A" pin="E" pad="34"/>
+<connect gate="A" pin="LIC" pad="38"/>
+<connect gate="A" pin="Q" pad="35"/>
+<connect gate="A" pin="R/!W" pad="32"/>
+<connect gate="A" pin="RESET" pad="37"/>
+<connect gate="A" pin="TSC" pad="39"/>
+<connect gate="P" pin="VCC" pad="7"/>
+<connect gate="P" pin="VSS" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SB" package="DIL40-SMD-REVERSE">
 <connects>
 <connect gate="A" pin="!FIRQ" pad="4"/>
 <connect gate="A" pin="!HALT" pad="40"/>
