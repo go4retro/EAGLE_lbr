@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3408,12 +3408,12 @@
 <pin name="A2/A10" x="-15.24" y="25.4" length="middle" direction="hiz"/>
 <pin name="A1/A9" x="-15.24" y="27.94" length="middle" direction="hiz"/>
 <pin name="A0/A8" x="-15.24" y="30.48" length="middle" direction="hiz"/>
-<pin name="IRQ" x="-15.24" y="-40.64" length="middle" direction="oc" function="dot"/>
+<pin name="!IRQ" x="-15.24" y="-40.64" length="middle" direction="oc" function="dot"/>
 <pin name="A11" x="-15.24" y="2.54" length="middle" direction="hiz"/>
 <pin name="BA" x="15.24" y="35.56" length="middle" direction="out" rot="R180"/>
 <pin name="!CE" x="-15.24" y="35.56" length="middle" direction="in" function="dot"/>
-<pin name="CAS" x="15.24" y="20.32" length="middle" direction="out" rot="R180"/>
-<pin name="RAS" x="15.24" y="25.4" length="middle" direction="out" rot="R180"/>
+<pin name="!CAS" x="15.24" y="20.32" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="!RAS" x="15.24" y="25.4" length="middle" direction="out" function="dot" rot="R180"/>
 <pin name="AEC" x="15.24" y="30.48" length="middle" direction="out" rot="R180"/>
 <pin name="PHI0" x="15.24" y="40.64" length="middle" direction="out" function="clk" rot="R180"/>
 <pin name="D7" x="-15.24" y="-25.4" length="middle" direction="hiz"/>
@@ -3432,8 +3432,8 @@
 <pin name="A9" x="-15.24" y="7.62" length="middle" direction="hiz"/>
 <pin name="D11" x="-15.24" y="-35.56" length="middle" direction="hiz"/>
 <pin name="COLOR" x="15.24" y="-40.64" length="middle" direction="out" rot="R180"/>
-<pin name="LP" x="15.24" y="-30.48" length="middle" direction="in" rot="R180"/>
-<pin name="R/W" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="!LP" x="15.24" y="-30.48" length="middle" direction="in" function="dot" rot="R180"/>
+<pin name="R/!W" x="-15.24" y="-2.54" length="middle" direction="in"/>
 <pin name="SYNC/LUM" x="15.24" y="-35.56" length="middle" direction="out" rot="R180"/>
 <pin name="A8" x="-15.24" y="10.16" length="middle" direction="hiz"/>
 <pin name="D9" x="-15.24" y="-30.48" length="middle" direction="hiz"/>
@@ -7389,7 +7389,11 @@ This is the KIM version.</description>
 <devices>
 <device name="" package="DIL40">
 <connects>
+<connect gate="A" pin="!CAS" pad="19"/>
 <connect gate="A" pin="!CE" pad="10"/>
+<connect gate="A" pin="!IRQ" pad="8"/>
+<connect gate="A" pin="!LP" pad="9"/>
+<connect gate="A" pin="!RAS" pad="18"/>
 <connect gate="A" pin="A0/A8" pad="24"/>
 <connect gate="A" pin="A1/A9" pad="25"/>
 <connect gate="A" pin="A10" pad="34"/>
@@ -7404,7 +7408,6 @@ This is the KIM version.</description>
 <connect gate="A" pin="A9" pad="33"/>
 <connect gate="A" pin="AEC" pad="16"/>
 <connect gate="A" pin="BA" pad="12"/>
-<connect gate="A" pin="CAS" pad="19"/>
 <connect gate="A" pin="COLCLK" pad="21"/>
 <connect gate="A" pin="COLOR" pad="14"/>
 <connect gate="A" pin="D0" pad="7"/>
@@ -7420,11 +7423,8 @@ This is the KIM version.</description>
 <connect gate="A" pin="D8" pad="38"/>
 <connect gate="A" pin="D9" pad="37"/>
 <connect gate="A" pin="DOTCLK" pad="22"/>
-<connect gate="A" pin="IRQ" pad="8"/>
-<connect gate="A" pin="LP" pad="9"/>
 <connect gate="A" pin="PHI0" pad="17"/>
-<connect gate="A" pin="R/W" pad="11"/>
-<connect gate="A" pin="RAS" pad="18"/>
+<connect gate="A" pin="R/!W" pad="11"/>
 <connect gate="A" pin="SYNC/LUM" pad="15"/>
 <connect gate="P" pin="GND" pad="20"/>
 <connect gate="P" pin="V12" pad="13"/>
@@ -7434,9 +7434,13 @@ This is the KIM version.</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-RP" package="DIL40-ROUNDPAD">
+<device name="-R" package="DIL40-ROUNDPAD">
 <connects>
+<connect gate="A" pin="!CAS" pad="19"/>
 <connect gate="A" pin="!CE" pad="10"/>
+<connect gate="A" pin="!IRQ" pad="8"/>
+<connect gate="A" pin="!LP" pad="9"/>
+<connect gate="A" pin="!RAS" pad="18"/>
 <connect gate="A" pin="A0/A8" pad="24"/>
 <connect gate="A" pin="A1/A9" pad="25"/>
 <connect gate="A" pin="A10" pad="34"/>
@@ -7451,7 +7455,6 @@ This is the KIM version.</description>
 <connect gate="A" pin="A9" pad="33"/>
 <connect gate="A" pin="AEC" pad="16"/>
 <connect gate="A" pin="BA" pad="12"/>
-<connect gate="A" pin="CAS" pad="19"/>
 <connect gate="A" pin="COLCLK" pad="21"/>
 <connect gate="A" pin="COLOR" pad="14"/>
 <connect gate="A" pin="D0" pad="7"/>
@@ -7467,11 +7470,102 @@ This is the KIM version.</description>
 <connect gate="A" pin="D8" pad="38"/>
 <connect gate="A" pin="D9" pad="37"/>
 <connect gate="A" pin="DOTCLK" pad="22"/>
-<connect gate="A" pin="IRQ" pad="8"/>
-<connect gate="A" pin="LP" pad="9"/>
 <connect gate="A" pin="PHI0" pad="17"/>
-<connect gate="A" pin="R/W" pad="11"/>
-<connect gate="A" pin="RAS" pad="18"/>
+<connect gate="A" pin="R/!W" pad="11"/>
+<connect gate="A" pin="SYNC/LUM" pad="15"/>
+<connect gate="P" pin="GND" pad="20"/>
+<connect gate="P" pin="V12" pad="13"/>
+<connect gate="P" pin="VCC" pad="40"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-S" package="DIL40-SMD">
+<connects>
+<connect gate="A" pin="!CAS" pad="19"/>
+<connect gate="A" pin="!CE" pad="10"/>
+<connect gate="A" pin="!IRQ" pad="8"/>
+<connect gate="A" pin="!LP" pad="9"/>
+<connect gate="A" pin="!RAS" pad="18"/>
+<connect gate="A" pin="A0/A8" pad="24"/>
+<connect gate="A" pin="A1/A9" pad="25"/>
+<connect gate="A" pin="A10" pad="34"/>
+<connect gate="A" pin="A11" pad="23"/>
+<connect gate="A" pin="A2/A10" pad="26"/>
+<connect gate="A" pin="A3/A11" pad="27"/>
+<connect gate="A" pin="A4/A12" pad="28"/>
+<connect gate="A" pin="A5/A13" pad="29"/>
+<connect gate="A" pin="A6" pad="30"/>
+<connect gate="A" pin="A7" pad="31"/>
+<connect gate="A" pin="A8" pad="32"/>
+<connect gate="A" pin="A9" pad="33"/>
+<connect gate="A" pin="AEC" pad="16"/>
+<connect gate="A" pin="BA" pad="12"/>
+<connect gate="A" pin="COLCLK" pad="21"/>
+<connect gate="A" pin="COLOR" pad="14"/>
+<connect gate="A" pin="D0" pad="7"/>
+<connect gate="A" pin="D1" pad="6"/>
+<connect gate="A" pin="D10" pad="36"/>
+<connect gate="A" pin="D11" pad="35"/>
+<connect gate="A" pin="D2" pad="5"/>
+<connect gate="A" pin="D3" pad="4"/>
+<connect gate="A" pin="D4" pad="3"/>
+<connect gate="A" pin="D5" pad="2"/>
+<connect gate="A" pin="D6" pad="1"/>
+<connect gate="A" pin="D7" pad="39"/>
+<connect gate="A" pin="D8" pad="38"/>
+<connect gate="A" pin="D9" pad="37"/>
+<connect gate="A" pin="DOTCLK" pad="22"/>
+<connect gate="A" pin="PHI0" pad="17"/>
+<connect gate="A" pin="R/!W" pad="11"/>
+<connect gate="A" pin="SYNC/LUM" pad="15"/>
+<connect gate="P" pin="GND" pad="20"/>
+<connect gate="P" pin="V12" pad="13"/>
+<connect gate="P" pin="VCC" pad="40"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SR" package="DIL40-SMD-REVERSE">
+<connects>
+<connect gate="A" pin="!CAS" pad="19"/>
+<connect gate="A" pin="!CE" pad="10"/>
+<connect gate="A" pin="!IRQ" pad="8"/>
+<connect gate="A" pin="!LP" pad="9"/>
+<connect gate="A" pin="!RAS" pad="18"/>
+<connect gate="A" pin="A0/A8" pad="24"/>
+<connect gate="A" pin="A1/A9" pad="25"/>
+<connect gate="A" pin="A10" pad="34"/>
+<connect gate="A" pin="A11" pad="23"/>
+<connect gate="A" pin="A2/A10" pad="26"/>
+<connect gate="A" pin="A3/A11" pad="27"/>
+<connect gate="A" pin="A4/A12" pad="28"/>
+<connect gate="A" pin="A5/A13" pad="29"/>
+<connect gate="A" pin="A6" pad="30"/>
+<connect gate="A" pin="A7" pad="31"/>
+<connect gate="A" pin="A8" pad="32"/>
+<connect gate="A" pin="A9" pad="33"/>
+<connect gate="A" pin="AEC" pad="16"/>
+<connect gate="A" pin="BA" pad="12"/>
+<connect gate="A" pin="COLCLK" pad="21"/>
+<connect gate="A" pin="COLOR" pad="14"/>
+<connect gate="A" pin="D0" pad="7"/>
+<connect gate="A" pin="D1" pad="6"/>
+<connect gate="A" pin="D10" pad="36"/>
+<connect gate="A" pin="D11" pad="35"/>
+<connect gate="A" pin="D2" pad="5"/>
+<connect gate="A" pin="D3" pad="4"/>
+<connect gate="A" pin="D4" pad="3"/>
+<connect gate="A" pin="D5" pad="2"/>
+<connect gate="A" pin="D6" pad="1"/>
+<connect gate="A" pin="D7" pad="39"/>
+<connect gate="A" pin="D8" pad="38"/>
+<connect gate="A" pin="D9" pad="37"/>
+<connect gate="A" pin="DOTCLK" pad="22"/>
+<connect gate="A" pin="PHI0" pad="17"/>
+<connect gate="A" pin="R/!W" pad="11"/>
 <connect gate="A" pin="SYNC/LUM" pad="15"/>
 <connect gate="P" pin="GND" pad="20"/>
 <connect gate="P" pin="V12" pad="13"/>
