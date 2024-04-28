@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1234,6 +1234,8 @@
 <wire x1="-47.74" y1="10.414" x2="-54.598" y2="10.414" width="0.127" layer="21"/>
 <wire x1="-50.788" y1="4.064" x2="-50.788" y2="10.16" width="0.127" layer="21" style="shortdash"/>
 <wire x1="50.788" y1="4.064" x2="50.788" y2="10.16" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-71.12" y1="18.415" x2="-71.12" y2="3.175" width="0" layer="48" style="longdash"/>
+<wire x1="71.12" y1="18.415" x2="71.12" y2="3.175" width="0" layer="48" style="longdash"/>
 </package>
 <package name="FE156-22-2">
 <wire x1="47.1" y1="4.5" x2="47.1" y2="-4.5" width="0.1524" layer="21"/>
@@ -1378,6 +1380,10 @@
 <text x="-45.3136" y="-2.4868" size="1.27" layer="21" ratio="10">22</text>
 <text x="43.688" y="-2.4868" size="1.27" layer="21" ratio="10">1</text>
 <text x="-45.3136" y="1.8312" size="1.27" layer="21" ratio="10">Z</text>
+<wire x1="71.12" y1="9.8679" x2="-71.12" y2="9.8679" width="0" layer="48" style="longdash"/>
+<wire x1="-71.12" y1="9.8679" x2="-71.12" y2="-9.8679" width="0" layer="48" style="longdash"/>
+<wire x1="-71.12" y1="-9.8679" x2="71.12" y2="-9.8679" width="0" layer="48" style="longdash"/>
+<wire x1="71.12" y1="-9.8679" x2="71.12" y2="9.8679" width="0" layer="48" style="longdash"/>
 </package>
 <package name="MA156-22-2">
 <wire x1="-45.72" y1="-3.175" x2="-43.815" y2="-5.08" width="0.127" layer="21" curve="90"/>
@@ -8412,59 +8418,55 @@ This is the KIM version.</description>
 <deviceset name="PORT_EXPANSION_VIC_CONN" prefix="X">
 <description>Expansionport of the Commodore VIC-20</description>
 <gates>
-<gate name="G$1" symbol="PORT_EXPANSION_VIC_CONN" x="0" y="-2.54"/>
-<gate name="G$2" symbol="PWR" x="0" y="43.18" addlevel="request"/>
-<gate name="G$3" symbol="GND" x="-12.7" y="-45.72" addlevel="request"/>
-<gate name="G$4" symbol="GND" x="-5.08" y="-45.72" addlevel="request"/>
-<gate name="G$5" symbol="GND" x="2.54" y="-45.72" addlevel="request"/>
-<gate name="G$6" symbol="GND" x="10.16" y="-45.72" addlevel="request"/>
+<gate name="A" symbol="PORT_EXPANSION_VIC_CONN" x="0" y="0"/>
+<gate name="P" symbol="PWR-GND4" x="-27.94" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="R" package="MA156-22-2SHORT">
 <connects>
-<connect gate="G$1" pin="!BLK1" pad="10"/>
-<connect gate="G$1" pin="!BLK2" pad="11"/>
-<connect gate="G$1" pin="!BLK3" pad="12"/>
-<connect gate="G$1" pin="!BLK5" pad="13"/>
-<connect gate="G$1" pin="!IO2" pad="T"/>
-<connect gate="G$1" pin="!IO3" pad="U"/>
-<connect gate="G$1" pin="!IRQ" pad="19"/>
-<connect gate="G$1" pin="!NMI" pad="W"/>
-<connect gate="G$1" pin="!RAM1" pad="14"/>
-<connect gate="G$1" pin="!RAM2" pad="15"/>
-<connect gate="G$1" pin="!RAM3" pad="16"/>
-<connect gate="G$1" pin="!RESET" pad="X"/>
-<connect gate="G$1" pin="A0" pad="B"/>
-<connect gate="G$1" pin="A1" pad="C"/>
-<connect gate="G$1" pin="A10" pad="N"/>
-<connect gate="G$1" pin="A11" pad="P"/>
-<connect gate="G$1" pin="A12" pad="R"/>
-<connect gate="G$1" pin="A13" pad="S"/>
-<connect gate="G$1" pin="A2" pad="D"/>
-<connect gate="G$1" pin="A3" pad="E"/>
-<connect gate="G$1" pin="A4" pad="F"/>
-<connect gate="G$1" pin="A5" pad="H"/>
-<connect gate="G$1" pin="A6" pad="J"/>
-<connect gate="G$1" pin="A7" pad="K"/>
-<connect gate="G$1" pin="A8" pad="L"/>
-<connect gate="G$1" pin="A9" pad="M"/>
-<connect gate="G$1" pin="AUDIO" pad="Y"/>
-<connect gate="G$1" pin="CR/!W" pad="18"/>
-<connect gate="G$1" pin="D0" pad="2"/>
-<connect gate="G$1" pin="D1" pad="3"/>
-<connect gate="G$1" pin="D2" pad="4"/>
-<connect gate="G$1" pin="D3" pad="5"/>
-<connect gate="G$1" pin="D4" pad="6"/>
-<connect gate="G$1" pin="D5" pad="7"/>
-<connect gate="G$1" pin="D6" pad="8"/>
-<connect gate="G$1" pin="D7" pad="9"/>
-<connect gate="G$1" pin="PHI2" pad="V"/>
-<connect gate="G$1" pin="VR/!W" pad="17"/>
-<connect gate="G$2" pin="VCC" pad="21"/>
-<connect gate="G$3" pin="GND" pad="1"/>
-<connect gate="G$4" pin="GND" pad="22"/>
-<connect gate="G$5" pin="GND" pad="A"/>
-<connect gate="G$6" pin="GND" pad="Z"/>
+<connect gate="A" pin="!BLK1" pad="10"/>
+<connect gate="A" pin="!BLK2" pad="11"/>
+<connect gate="A" pin="!BLK3" pad="12"/>
+<connect gate="A" pin="!BLK5" pad="13"/>
+<connect gate="A" pin="!IO2" pad="T"/>
+<connect gate="A" pin="!IO3" pad="U"/>
+<connect gate="A" pin="!IRQ" pad="19"/>
+<connect gate="A" pin="!NMI" pad="W"/>
+<connect gate="A" pin="!RAM1" pad="14"/>
+<connect gate="A" pin="!RAM2" pad="15"/>
+<connect gate="A" pin="!RAM3" pad="16"/>
+<connect gate="A" pin="!RESET" pad="X"/>
+<connect gate="A" pin="A0" pad="B"/>
+<connect gate="A" pin="A1" pad="C"/>
+<connect gate="A" pin="A10" pad="N"/>
+<connect gate="A" pin="A11" pad="P"/>
+<connect gate="A" pin="A12" pad="R"/>
+<connect gate="A" pin="A13" pad="S"/>
+<connect gate="A" pin="A2" pad="D"/>
+<connect gate="A" pin="A3" pad="E"/>
+<connect gate="A" pin="A4" pad="F"/>
+<connect gate="A" pin="A5" pad="H"/>
+<connect gate="A" pin="A6" pad="J"/>
+<connect gate="A" pin="A7" pad="K"/>
+<connect gate="A" pin="A8" pad="L"/>
+<connect gate="A" pin="A9" pad="M"/>
+<connect gate="A" pin="AUDIO" pad="Y"/>
+<connect gate="A" pin="CR/!W" pad="18"/>
+<connect gate="A" pin="D0" pad="2"/>
+<connect gate="A" pin="D1" pad="3"/>
+<connect gate="A" pin="D2" pad="4"/>
+<connect gate="A" pin="D3" pad="5"/>
+<connect gate="A" pin="D4" pad="6"/>
+<connect gate="A" pin="D5" pad="7"/>
+<connect gate="A" pin="D6" pad="8"/>
+<connect gate="A" pin="D7" pad="9"/>
+<connect gate="A" pin="PHI2" pad="V"/>
+<connect gate="A" pin="VR/!W" pad="17"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="GND@1" pad="22"/>
+<connect gate="P" pin="GND@2" pad="A"/>
+<connect gate="P" pin="GND@3" pad="Z"/>
+<connect gate="P" pin="VCC" pad="21"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8472,49 +8474,49 @@ This is the KIM version.</description>
 </device>
 <device name="" package="FE156-22-2">
 <connects>
-<connect gate="G$1" pin="!BLK1" pad="10"/>
-<connect gate="G$1" pin="!BLK2" pad="11"/>
-<connect gate="G$1" pin="!BLK3" pad="12"/>
-<connect gate="G$1" pin="!BLK5" pad="13"/>
-<connect gate="G$1" pin="!IO2" pad="T"/>
-<connect gate="G$1" pin="!IO3" pad="U"/>
-<connect gate="G$1" pin="!IRQ" pad="19"/>
-<connect gate="G$1" pin="!NMI" pad="W"/>
-<connect gate="G$1" pin="!RAM1" pad="14"/>
-<connect gate="G$1" pin="!RAM2" pad="15"/>
-<connect gate="G$1" pin="!RAM3" pad="16"/>
-<connect gate="G$1" pin="!RESET" pad="X"/>
-<connect gate="G$1" pin="A0" pad="B"/>
-<connect gate="G$1" pin="A1" pad="C"/>
-<connect gate="G$1" pin="A10" pad="N"/>
-<connect gate="G$1" pin="A11" pad="P"/>
-<connect gate="G$1" pin="A12" pad="R"/>
-<connect gate="G$1" pin="A13" pad="S"/>
-<connect gate="G$1" pin="A2" pad="D"/>
-<connect gate="G$1" pin="A3" pad="E"/>
-<connect gate="G$1" pin="A4" pad="F"/>
-<connect gate="G$1" pin="A5" pad="H"/>
-<connect gate="G$1" pin="A6" pad="J"/>
-<connect gate="G$1" pin="A7" pad="K"/>
-<connect gate="G$1" pin="A8" pad="L"/>
-<connect gate="G$1" pin="A9" pad="M"/>
-<connect gate="G$1" pin="AUDIO" pad="Y"/>
-<connect gate="G$1" pin="CR/!W" pad="18"/>
-<connect gate="G$1" pin="D0" pad="2"/>
-<connect gate="G$1" pin="D1" pad="3"/>
-<connect gate="G$1" pin="D2" pad="4"/>
-<connect gate="G$1" pin="D3" pad="5"/>
-<connect gate="G$1" pin="D4" pad="6"/>
-<connect gate="G$1" pin="D5" pad="7"/>
-<connect gate="G$1" pin="D6" pad="8"/>
-<connect gate="G$1" pin="D7" pad="9"/>
-<connect gate="G$1" pin="PHI2" pad="V"/>
-<connect gate="G$1" pin="VR/!W" pad="17"/>
-<connect gate="G$2" pin="VCC" pad="21"/>
-<connect gate="G$3" pin="GND" pad="1"/>
-<connect gate="G$4" pin="GND" pad="22"/>
-<connect gate="G$5" pin="GND" pad="A"/>
-<connect gate="G$6" pin="GND" pad="Z"/>
+<connect gate="A" pin="!BLK1" pad="10"/>
+<connect gate="A" pin="!BLK2" pad="11"/>
+<connect gate="A" pin="!BLK3" pad="12"/>
+<connect gate="A" pin="!BLK5" pad="13"/>
+<connect gate="A" pin="!IO2" pad="T"/>
+<connect gate="A" pin="!IO3" pad="U"/>
+<connect gate="A" pin="!IRQ" pad="19"/>
+<connect gate="A" pin="!NMI" pad="W"/>
+<connect gate="A" pin="!RAM1" pad="14"/>
+<connect gate="A" pin="!RAM2" pad="15"/>
+<connect gate="A" pin="!RAM3" pad="16"/>
+<connect gate="A" pin="!RESET" pad="X"/>
+<connect gate="A" pin="A0" pad="B"/>
+<connect gate="A" pin="A1" pad="C"/>
+<connect gate="A" pin="A10" pad="N"/>
+<connect gate="A" pin="A11" pad="P"/>
+<connect gate="A" pin="A12" pad="R"/>
+<connect gate="A" pin="A13" pad="S"/>
+<connect gate="A" pin="A2" pad="D"/>
+<connect gate="A" pin="A3" pad="E"/>
+<connect gate="A" pin="A4" pad="F"/>
+<connect gate="A" pin="A5" pad="H"/>
+<connect gate="A" pin="A6" pad="J"/>
+<connect gate="A" pin="A7" pad="K"/>
+<connect gate="A" pin="A8" pad="L"/>
+<connect gate="A" pin="A9" pad="M"/>
+<connect gate="A" pin="AUDIO" pad="Y"/>
+<connect gate="A" pin="CR/!W" pad="18"/>
+<connect gate="A" pin="D0" pad="2"/>
+<connect gate="A" pin="D1" pad="3"/>
+<connect gate="A" pin="D2" pad="4"/>
+<connect gate="A" pin="D3" pad="5"/>
+<connect gate="A" pin="D4" pad="6"/>
+<connect gate="A" pin="D5" pad="7"/>
+<connect gate="A" pin="D6" pad="8"/>
+<connect gate="A" pin="D7" pad="9"/>
+<connect gate="A" pin="PHI2" pad="V"/>
+<connect gate="A" pin="VR/!W" pad="17"/>
+<connect gate="P" pin="GND" pad="1"/>
+<connect gate="P" pin="GND@1" pad="22"/>
+<connect gate="P" pin="GND@2" pad="A"/>
+<connect gate="P" pin="GND@3" pad="Z"/>
+<connect gate="P" pin="VCC" pad="21"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8526,11 +8528,7 @@ This is the KIM version.</description>
 <description>Expansionport of the Commodore VIC-20</description>
 <gates>
 <gate name="G$1" symbol="PORT_EXPANSION_VIC20_EDGE" x="0" y="0"/>
-<gate name="G$2" symbol="PWR" x="0" y="43.18" addlevel="request"/>
-<gate name="G$3" symbol="GND" x="-12.7" y="-40.64" addlevel="request"/>
-<gate name="G$4" symbol="GND" x="-5.08" y="-40.64" addlevel="request"/>
-<gate name="G$5" symbol="GND" x="2.54" y="-40.64" addlevel="request"/>
-<gate name="G$6" symbol="GND" x="10.16" y="-40.64" addlevel="request"/>
+<gate name="G$2" symbol="PWR-GND4" x="-33.02" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="" package="MA156-22-2">
@@ -8573,11 +8571,11 @@ This is the KIM version.</description>
 <connect gate="G$1" pin="D7" pad="9"/>
 <connect gate="G$1" pin="PHI2" pad="V"/>
 <connect gate="G$1" pin="VR/!W" pad="17"/>
+<connect gate="G$2" pin="GND" pad="1"/>
+<connect gate="G$2" pin="GND@1" pad="22"/>
+<connect gate="G$2" pin="GND@2" pad="A"/>
+<connect gate="G$2" pin="GND@3" pad="Z"/>
 <connect gate="G$2" pin="VCC" pad="21"/>
-<connect gate="G$3" pin="GND" pad="1"/>
-<connect gate="G$4" pin="GND" pad="22"/>
-<connect gate="G$5" pin="GND" pad="A"/>
-<connect gate="G$6" pin="GND" pad="Z"/>
 </connects>
 <technologies>
 <technology name=""/>
