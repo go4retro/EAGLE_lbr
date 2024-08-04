@@ -148,6 +148,7 @@ Source: www.abracon.com</description>
 </symbols>
 <devicesets>
 <deviceset name="FA-238" prefix="Q">
+<description>ASE Crystal</description>
 <gates>
 <gate name="A" symbol="Q" x="0" y="0"/>
 <gate name="P1" symbol="GND" x="-5.08" y="-15.24" addlevel="request"/>
